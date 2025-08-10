@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- google icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- style.css -->
+     <link rel="stylesheet" href="/style.css">
+    <title>first</title>
+</head>
+<body>
+  <%- include('./layout/header'); -%>
+  <div class="pb-5" style="background-color: #F0F3F5;">
+  <div class="container  bg-white p-5  shadow-sm" style="border-radius: 13px;">
+    <h1>預約紀錄</h1>
+    <div class="d-flex mt-5 column-gap-4">
+        <div class="text-center border py-4 border-secondary w-100 d-none d-lg-block me-3" style="border-radius: 13px;">
+            <p class="fw-bold fs-2  text-primary">3</p>
+            <p class="text-secondary fs-5">已完成諮詢</p>
+        </div>
+        <div class="text-center border py-4 border-secondary w-100 me-3" style="border-radius: 13px;">
+            <p class="fw-bold fs-2 text-primary">2025/10/10</p>
+            <p class="text-secondary fs-5">即將到來</p>
+        </div>
+        <div class="text-center border py-4 border-secondary w-100 d-none d-lg-block" style="border-radius: 13px;"> 
+            <p class="fw-bold fs-2 text-primary">3/6</p>
+            <p class="text-secondary fs-5">使用方案進度</p>
+        </div>
+    </div>
+    <div class="d-flex justify-content-between align-items-center mt-5">
+        <div class="d-flex align-items-center">
+            <button class=" btn btn-small-ave border border-secondary bg-black  text-white me-1" >全部預約</button>
+            <button class=" btn btn-small-ave border border-secondary me-1">已完成</button>
+            <button class=" btn-small-ave btn border border-secondary me-1">已取消</button>
+        </div>
+        <div>
+            <!-- <button class="btn btn-small-ave border border-secondary" >排序</button> -->
+             <div class="dropdown">
+  <button class="btn btn-small-ave border border-secondary " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    排序
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">舊到新</a></li>
+    <li><a class="dropdown-item" href="#">新到舊</a></li>
+  </ul>
+</div>
+        </div>
+    </div>
+    <div class="mt-5">
+            <table class="table table-striped table-hover">
+        <thead>
+            <tr class="text-nowrap ">
+            <th class="w-100 fs-sm py-3 px-3 fw-bolder">諮詢方案</th>
+            <th class=" fs-sm py-3 px-3">預約日期</th>
+            <th class=" fs-sm py-3 px-3">諮詢時長</th>
+            <th class=" fs-sm py-3 px-3">諮詢方式</th>
+            <th class=" fs-sm py-3 px-3">上課狀態</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="text-lg-nowrap ">
+                <td class="py-3 px-3">職涯定位-職涯探索包 | 6/6堂	</td>
+                <td class="py-3 px-3">2025/11/11</td>
+                <td class="py-3 px-3">60分鐘</td>
+                <td class="text-center text-lg-nowrap"><div class="btn-method border border-secondary">視訊</div></td>
+                <td class="py-3 px-3">等待上課</td>
+            </tr>
+            <tr class="text-lg-nowrap">
+                <td class="py-3 px-3">職涯定位-職涯探索包 | 5/6堂	</td>
+                <td class="py-3 px-3">2025/10/10</td>
+                <td class="py-3 px-3">60分鐘</td>
+                <td class="text-center text-lg-nowrap"><div class="btn-method  border border-secondary">視訊</div></td>
+                <td class="py-3 px-3">等待上課</td>
+            </tr>
+            <tr class="text-lg-nowrap">
+                <td class="py-3 px-3 text-grey">職涯定位-職涯探索包 | 4/6堂	</td>
+                <td class="py-3 px-3 text-grey">2025/09/09	</td>
+                <td class="py-3 px-3 text-grey">60分鐘</td>
+                <td class="text-center text-grey text-lg-nowrap"><div class="btn-method  border border-secondary">視訊</div></td>
+                <td class="py-3 px-3 text-grey">已完成
+</td>
+            </tr>
+            <tr class="text-grey text-lg-nowrap">
+                <td class="py-3 px-3">職涯定位-職涯探索包 | 3/6堂	</td>
+                <td class="py-3 px-3">2025/08/08</td>
+                <td class="py-3 px-3">60分鐘</td>
+                <td class="text-center text-lg-nowrap"><div class="btn-method  border border-secondary">面對面</div></td>
+                <td class="py-3 px-3">已完成</td>
+            </tr>
+            <tr class="text-lg-nowrap">
+                <td class="py-3 px-3 text-grey">職涯定位-職涯探索包 | 2/6堂	</td>
+                <td class="py-3 px-3 text-grey">2025/07/07</td>
+                <td class="py-3 px-3 text-grey">60分鐘</td>
+                <td class="text-grey text-center text-lg-nowrap"><div class="btn-method  border border-secondary">面對面</div></td>
+                <td class="py-3 px-3 text-grey">已完成</td>
+            </tr>
+            <tr class="text-grey text-lg-nowrap">
+                <td class="py-3 px-3">職涯定位-職涯探索包 | 1/6堂 </td>
+                <td class="py-3 px-3">2025/06/06</td>
+                <td class="py-3 px-3">90分鐘</td>
+                <td class="text-center text-lg-nowrap"><div class="btn-method  border border-secondary">面對面</div></td>
+                <td class="py-3 px-3">已完成</td>
+            </tr>
+        </tbody>
+            
+    </table>
+    </div>
+
+</div>
+</div>
+
+  <%- include('./layout/footer'); -%>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script type="module" src="../main.js"></script>
+</body>
+</html>

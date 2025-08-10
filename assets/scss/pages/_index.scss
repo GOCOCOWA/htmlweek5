@@ -1,3 +1,25 @@
-.index-title {
-  font-size: 100px;
+.btn-small-ave{
+    padding: 12px 20px;
+    border-radius: 13px;
+}
+.fs-sm{
+    font-size: 0.875rem; /* 14px */
+}
+.fw-500{
+    font-weight: 500;
+}
+.text-grey{
+    color: #8599AD;
+}
+.btn-method{
+    padding: 4px 2px;
+    border-radius: 20px;
+    font-size: 0.875rem; /* 14px */
+    font-weight: 700;
+    color: #667F99;
+    background-color: white;
+}
+textarea::placeholder {
+  color: black;
+  opacity: 1; 
 }
